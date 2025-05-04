@@ -17,10 +17,7 @@ export const projects = [
     description:
       "Aplicativo de e-commerce desenvolvido em Flutter, com interface moderna e responsiva.",
     category: "mobile",
-    tags: [
-      { name: "Dart", percentage: 98 },
-      { name: "Imagens/assets", percentage: 2 },
-    ],
+    tags: [{ name: "Dart", percentage: 100 }],
     demoUrl: "https://seu-ecommerce.com",
     codeUrl: "https://github.com/aray4mikael/ecommerceApp",
   },
