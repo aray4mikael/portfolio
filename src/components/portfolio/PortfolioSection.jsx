@@ -18,7 +18,7 @@ const PortfolioSection = ({ projects }) => {
 
   return (
     <section className="portfolio-section">
-      <h1>Meus Projetos</h1>
+      <h1>Projetos</h1>
 
       <PortfolioFilters
         categories={categories}

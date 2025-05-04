@@ -21,16 +21,6 @@ const PortfolioCard = ({ project }) => {
           ))}
         </div>
         <div className="portfolio-links">
-          {project.demoUrl && (
-            <a
-              href={project.demoUrl}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="demo-button"
-            >
-              Demo
-            </a>
-          )}
           {project.codeUrl && (
             <a
               href={project.codeUrl}

@@ -40,25 +40,32 @@ export const skills = [
 
 export const experiences = [
   {
-    date: "2023 - Presente",
-    title: "Desenvolvedor Full Stack",
-    company: "Empresa Tech",
-    description:
-      "Desenvolvimento de aplicações web e mobile utilizando React, Flutter e Python. Implementação de automações com n8n e gerenciamento de banco de dados PostgreSQL.",
-  },
-  {
-    date: "2021 - 2023",
+    date: "07/2022 - 09/2024",
     title: "Desenvolvedor Mobile",
-    company: "Startup Inovadora",
+    company: "Fumec",
     description:
-      "Desenvolvimento de aplicativos Android nativos e multiplataforma com Flutter. Integração com APIs e implementação de recursos avançados de UI/UX.",
+      "Desenvolvimento de App mobile em Flutter e respectivas APIs de acesso ao banco de dados Oracle",
   },
   {
-    date: "2019 - 2021",
-    title: "Desenvolvedor Frontend",
-    company: "Agência Digital",
+    date: "02/2022 - 07/2022",
+    title: "Estagiário de Desenvolvimento",
+    company: "Medika",
     description:
-      "Criação de interfaces modernas e responsivas utilizando React.js. Implementação de designs complexos e otimização de performance.",
+      " Desenvolvimento de plugins em Java para automatização do sistema interno.",
+  },
+  {
+    date: "07/2021 - 12/2021",
+    title: "Professor de Informática",
+    company: "Escola Estadual Padre Menezes",
+    description:
+      "Professor de Programação para a Internet no curso técnico de informática.",
+  },
+  {
+    date: "04/2021 - 07/2021",
+    title: "Estagiário de Desenvolvimento",
+    company: "Compasso UOL",
+    description:
+      " Participei do programa de bolsas para estudantes da PUC Minas onde criamos um app de banco digital para Android usando Kotlin.",
   },
 ];
 

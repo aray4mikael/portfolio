@@ -15,7 +15,7 @@ const PortfolioFilters = ({
           }`}
           onClick={() => onCategoryChange(category)}
         >
-          {category.charAt(0).toUpperCase() + category.slice(1)}
+          {category}
         </button>
       ))}
     </div>

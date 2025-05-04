@@ -11,12 +11,17 @@ const IntroSection = () => {
           <h1>Olá, eu sou o Mikael</h1>
           <p>Software developer front e backend</p>
           <div className="button-group">
-            <button className="contact-button">Entre em Contato</button>
+            <button
+              className="contact-button"
+              onClick={() => navigate("/contatos")}
+            >
+              Entre em Contato
+            </button>
             <button
               className="projects-button"
-              onClick={() => navigate("/portfolio")}
+              onClick={() => navigate("/projetos")}
             >
-              Ver Projetos
+              Projetos
             </button>
           </div>
         </div>
