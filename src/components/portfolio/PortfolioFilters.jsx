@@ -1,0 +1,31 @@
+import PropTypes from "prop-types";
+
+const PortfolioFilters = ({
+  categories,
+  selectedCategory,
+  onCategoryChange,
+}) => {
+  return (
+    <div className="portfolio-filters">
+      {categories.map((category) => (
+        <button
+          key={category}
+          className={`filter-button ${
+            selectedCategory === category ? "active" : ""
+          }`}
+          onClick={() => onCategoryChange(category)}
+        >
+          {category.charAt(0).toUpperCase() + category.slice(1)}
+        </button>
+      ))}
+    </div>
+  );
+};
+
+PortfolioFilters.propTypes = {
+  categories: PropTypes.arrayOf(PropTypes.string).isRequired,
+  selectedCategory: PropTypes.string.isRequired,
+  onCategoryChange: PropTypes.func.isRequired,
+};
+
+export default PortfolioFilters;

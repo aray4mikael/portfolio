@@ -1,4 +1,5 @@
 import { useState, useEffect } from "react";
+import { Link } from "react-router-dom";
 import logo from "../assets/images/logo.png";
 
 const Navbar = () => {
@@ -20,13 +21,13 @@ const Navbar = () => {
   return (
     <nav className={`navbar ${isScrolled ? "scrolled" : ""}`}>
       <div className="navbar-container">
-        <div className="logo">
+        <Link to="/" className="logo">
           <img src={logo} alt="Logo" />
           <span>Mikael</span>
-        </div>
+        </Link>
         <div className="nav-links">
-          <a href="#sobre">Sobre</a>
-          <a href="#portfolio">Portfolio</a>
+          <Link to="/">Início</Link>
+          <Link to="/portfolio">Portfólio</Link>
           <a href="#contato">Contato</a>
         </div>
       </div>
