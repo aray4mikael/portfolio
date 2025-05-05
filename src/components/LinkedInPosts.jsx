@@ -5,7 +5,7 @@ import "../styles/LinkedInPosts.css";
 const LinkedInPosts = ({ posts }) => {
   return (
     <section className="linkedin-posts">
-      <h2>Latest LinkedIn Posts</h2>
+      <h2>Ultimos Posts do LinkedIn</h2>
       <div className="posts-grid">
         {posts.map((post, index) => (
           <div key={index} className="post-container">

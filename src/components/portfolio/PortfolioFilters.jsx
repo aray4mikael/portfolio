@@ -5,6 +5,13 @@ const PortfolioFilters = ({
   selectedCategory,
   onCategoryChange,
 }) => {
+  const capitalizeWords = (str) => {
+    return str
+      .split(" ")
+      .map((word) => word.charAt(0).toUpperCase() + word.slice(1))
+      .join(" ");
+  };
+
   return (
     <div className="portfolio-filters">
       {categories.map((category) => (
@@ -15,7 +22,7 @@ const PortfolioFilters = ({
           }`}
           onClick={() => onCategoryChange(category)}
         >
-          {category}
+          {capitalizeWords(category)}
         </button>
       ))}
     </div>

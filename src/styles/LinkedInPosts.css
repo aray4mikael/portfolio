@@ -1,6 +1,15 @@
 .linkedin-posts {
-  padding: 2rem;
-  background-color: var(--background-color);
+  padding: 2rem 0;
+  background-color: rgba(0, 0, 0, 0.1);
+  width: 100vw;
+  position: relative;
+  left: 50%;
+  right: 50%;
+  margin-left: -50vw;
+  margin-right: -50vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   color: var(--text-color);
 }
 
@@ -9,6 +18,9 @@
   margin-bottom: 2rem;
   font-size: 2rem;
   color: #ffd700;
+  max-width: 1200px;
+  width: 100%;
+  padding: 0 2rem;
 }
 
 .posts-grid {
@@ -16,7 +28,9 @@
   grid-template-columns: repeat(3, 1fr);
   gap: 2rem;
   justify-content: center;
-  max-width: 1800px;
+  max-width: 1200px;
+  width: 100%;
+  padding: 0 2rem;
   margin: 0 auto;
 }
 
