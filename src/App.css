@@ -5,6 +5,7 @@
   --secondary-color: #ffa500;
   --text-color: #fff;
   --background-color: #242424;
+  --card-background: rgba(255, 255, 255, 0.05);
 }
 
 .app {
@@ -27,8 +28,8 @@ h1 {
 }
 
 .logo {
-  height: 6em;
-  padding: 1.5em;
+  height: 60px;
+  padding: 0;
   will-change: filter;
   transition: filter 300ms;
   display: flex;
@@ -60,14 +61,14 @@ h1 {
 }
 
 .logo img {
-  width: 32px;
-  height: 32px;
+  width: 36px;
+  height: 36px;
 }
 
 .logo span {
   font-size: 1.2rem;
   font-weight: 600;
-  color: #fff;
+  color: var(--text-color);
   font-family: "Montserrat", sans-serif;
 }
 
@@ -84,41 +85,49 @@ h1 {
   top: 0;
   left: 0;
   right: 0;
-  background-color: #242424;
+  background-color: var(--background-color);
   z-index: 1000;
   transition: all 0.3s ease;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+  height: 90px;
+  display: flex;
+  align-items: center;
 }
 
 .navbar-container {
   max-width: 1280px;
   margin: 0 auto;
-  padding: 1.5rem 2rem;
+  padding: 0 2rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  width: 100%;
+  height: 100%;
 }
 
 .navbar.scrolled {
   background-color: rgba(36, 36, 36, 0.95);
   backdrop-filter: blur(10px);
+  height: 75px;
 }
 
 .navbar.scrolled .navbar-container {
-  padding: 0.75rem 2rem;
+  padding: 0 2rem;
 }
 
 .navbar.scrolled .logo {
-  height: 4em;
-  padding: 0.75em;
+  height: 52px;
+  padding: 0;
 }
 
 .navbar.scrolled .logo img {
-  width: 24px;
-  height: 24px;
+  width: 30px;
+  height: 30px;
 }
 
 .navbar.scrolled .logo span {
-  font-size: 1rem;
+  font-size: 1.1rem;
 }
 
 .navbar.scrolled .nav-links a {
@@ -202,14 +211,14 @@ h1 {
 .intro-text h1 {
   font-size: 2.8rem;
   font-weight: 600;
-  color: #fff;
+  color: var(--text-color);
   margin-bottom: 0.8rem;
   line-height: 1.2;
 }
 
 .intro-text p {
   font-size: 1.2rem;
-  color: #fff;
+  color: var(--text-color);
   opacity: 0.8;
   margin-bottom: 1.6rem;
 }
@@ -711,10 +720,11 @@ h1 {
     top: auto;
     background-color: var(--background-color);
     border-top: 1px solid rgba(255, 215, 0, 0.1);
+    height: 90px;
   }
 
   .navbar-container {
-    padding: 0.5rem;
+    padding: 0 1rem;
   }
 
   .logo {
@@ -998,5 +1008,30 @@ h1 {
 
   .timeline-item:hover .timeline-content {
     transform: translateX(0);
+  }
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    --text-color: #213547;
+    --background-color: #ffffff;
+    --card-background: rgba(0, 0, 0, 0.05);
+  }
+
+  .navbar {
+    background-color: var(--background-color);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  }
+
+  .navbar.scrolled {
+    background-color: rgba(255, 255, 255, 0.95);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  }
+
+  .tech-card,
+  .portfolio-card,
+  .timeline-content {
+    background-color: var(--card-background);
   }
 }

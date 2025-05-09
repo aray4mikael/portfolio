@@ -3,7 +3,7 @@
   line-height: 1.5;
   font-weight: 400;
 
-  color-scheme: light dark;
+  color-scheme: dark;
   color: rgba(255, 255, 255, 0.87);
   background-color: #242424;
 
@@ -68,5 +68,26 @@ button:focus-visible {
   button {
     background-color: #ffd700;
     color: #000;
+  }
+  .intro-text h1,
+  .intro-text p,
+  .tech-card h3,
+  .tech-card p,
+  .timeline-content h3,
+  .timeline-content h4,
+  .timeline-content p,
+  .contact-info p {
+    color: #213547;
+  }
+  .navbar {
+    background-color: #ffffff;
+  }
+  .navbar.scrolled {
+    background-color: rgba(255, 255, 255, 0.95);
+  }
+  .tech-card,
+  .portfolio-card,
+  .timeline-content {
+    background-color: rgba(0, 0, 0, 0.05);
   }
 }

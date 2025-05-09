@@ -9,7 +9,7 @@ const IntroSection = () => {
       <div className="intro-section">
         <div className="intro-text">
           <h1>Olá, eu sou o Mikael</h1>
-          <p>Software developer front e backend</p>
+          <p>Desenvolvedor Full Stack</p>
           <div className="button-group">
             <button
               className="contact-button"
