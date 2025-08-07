@@ -259,6 +259,13 @@ h1 {
   margin-top: 0;
 }
 
+.projects-button:hover {
+  background-color: var(--secondary-color);
+  color: var(--background-color);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(255, 215, 0, 0.3);
+}
+
 .photo-section {
   flex: 1;
   position: relative;

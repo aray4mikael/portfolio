@@ -4,6 +4,8 @@ import n8nIcon from "../assets/images/n8n.png";
 import androidIcon from "../assets/images/android.png";
 import postgresqlIcon from "../assets/images/postgresql.png";
 import pythonIcon from "../assets/images/python.png";
+import nextjsIcon from "../assets/images/Next.js.png";
+import vueIcon from "../assets/images/vue.js.png";
 
 export const skills = [
   {
@@ -36,9 +38,26 @@ export const skills = [
     title: "Python",
     description: "Desenvolvimento backend e automação de processos",
   },
+  {
+    icon: nextjsIcon,
+    title: "Next.js",
+    description: "Framework React para aplicações web full-stack",
+  },
+  {
+    icon: vueIcon,
+    title: "Vue.js",
+    description: "Framework progressivo para construção de interfaces",
+  },
 ];
 
 export const experiences = [
+  {
+    date: "06/2025 - Até o momento",
+    title: "Desenvolvedor Full Stack",
+    company: "Teknisa",
+    description:
+      "Desenvolvimento de Interface Next.js e desenvolvimento de interface AngularJS",
+  },
   {
     date: "07/2022 - 09/2024",
     title: "Desenvolvedor Mobile",
